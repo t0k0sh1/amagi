@@ -1,0 +1,17 @@
+[package]
+name = "amagi"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+mio = { version = "1", features = ["os-poll", "net"]}
+flate2 = "1"
+hex = "0.4"
+
+[[bin]]
+name = "amagi-server"
+path = "src/bin/server.rs"
+
+[[bin]]
+name = "amagi"
+path = "src/bin/cli.rs"
